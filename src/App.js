@@ -1,6 +1,7 @@
 import React from "react";
 
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route, Link } from "react-router-dom";
@@ -14,7 +15,7 @@ export default function App(){
     return (
       <body>
         <Header />
-        
+
         <div className="App">
           <Routes>
             <Route path="/" element={<Home />}></Route>
@@ -22,6 +23,8 @@ export default function App(){
             <Route path="/contact" element={<Contact />}></Route>
           </Routes>
         </div>
+        
+        <Footer />
       </body>
     )
   };
